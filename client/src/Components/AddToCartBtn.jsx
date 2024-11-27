@@ -1,0 +1,76 @@
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addProduct,
+  dececressQuantity,
+  incressQuantity,
+} from "../redux/supperShopSlice";
+import { toast } from "react-hot-toast";
+import { useEffect, useState } from "react";
+import { FiMinus } from "react-icons/fi";
+import { FaPlus } from "react-icons/fa";
+
+const AddToCartBtn = ({ item }) => {
+  const dispatch = useDispatch();
+  const { cart } = useSelector((state) => state.name);
+
+  const [existingProduct, setExistingProduct] = useState(null);
+
+  useEffect(() => {
+    if (item) {
+      const availableProduct = cart.find(
+        (cartItem) => cartItem._id === item._id
+      );
+      setExistingProduct(availableProduct);
+    }
+  }, [cart, item]);
+
+  const handleAddToCart = () => {
+    if (item) {
+      dispatch(addProduct(item));
+      toast.success(`${item.title.slice(0, 18)} added successfully`);
+    }
+  };
+
+  const handleIncreaseQuantity = () => {
+    dispatch(dispatch(incressQuantity(item._id)));
+    toast.success(`Increased quantity for ${item.title}`);
+  };
+
+  const handleDecreaseQuantity = () => {
+    dispatch(dececressQuantity(item._id));
+    toast.success(`Decreased quantity for ${item.title}`);
+  };
+
+  return (
+    <div>
+      {existingProduct ? (
+        <div className="flex items-center space-x-2">
+          <button
+            className="px-4 py-2 text-gray-600 hover:bg-gray-200"
+            onClick={handleDecreaseQuantity}
+          >
+            <FiMinus />
+          </button>
+          <span className="px-6 py-2 bg-gray-100">
+            {existingProduct.quantity || 0}
+          </span>
+          <button
+            className="px-4 py-2 text-gray-600 hover:bg-gray-200"
+            onClick={handleIncreaseQuantity}
+          >
+            <FaPlus />
+          </button>
+        </div>
+      ) : (
+        <button
+          onClick={handleAddToCart}
+          className="h-10 w-28 rounded-md bg-black text-white hover:bg-[#FE9931] duration-300"
+        >
+          Add To Cart
+        </button>
+      )}
+    </div>
+  );
+};
+
+export default AddToCartBtn;
