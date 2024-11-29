@@ -30,7 +30,7 @@ const ProductCard = ({ item }) => {
     <div className="group hover:border p-2 border-gray-300 cursor-pointer relative rounded-lg shadow-lg overflow-hidden h-[280px] w-52 bg-white hover:shadow-black transition-shadow duration-300 ease-in-out">
       <Link to={`/single/${item._id}`}>
         <img
-          src={item.image}
+          src={item.image[0]}
           alt={item.name}
           className="h-40 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
         />

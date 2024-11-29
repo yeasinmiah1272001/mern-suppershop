@@ -2,7 +2,10 @@
   {
     "id": 1,
     "title": "Figaro Green Olives",
-    "image": "https://i.ibb.co.com/NWcbxBr/1.jpg",
+    "image": [
+      "https://i.ibb.co.com/NWcbxBr/1.jpg",
+      "https://i.ibb.co.com/NWcbxBr/1.jpg"
+    ],
     "price": "250",
     "oldprice": "280",
     "SKU": "SKU-FGO-001",
@@ -14,7 +17,10 @@
   {
     "id": 2,
     "title": "Premium Dried Figs (তীন ফল)",
-    "image": "https://i.ibb.co.com/rfkcVVj/2.jpg",
+    "image": [
+      "https://i.ibb.co.com/rfkcVVj/2.jpg",
+      "https://i.ibb.co.com/rfkcVVj/2.jpg"
+    ],
     "price": "870",
     "oldprice": "920",
     "SKU": "SKU-PDF-002",
@@ -26,7 +32,10 @@
   {
     "id": 3,
     "title": "Johnson's Baby Soap 50gm (Buy 3 Get 1 Free) India",
-    "image": "https://i.ibb.co.com/NVnQXsB/3.webp",
+    "image": [
+      "https://i.ibb.co.com/NVnQXsB/3.webp",
+      "https://i.ibb.co.com/NVnQXsB/3.webp"
+    ],
     "price": "240",
     "oldprice": "265",
     "SKU": "SKU-JBS-003",
@@ -38,7 +47,10 @@
   {
     "id": 4,
     "title": "Harpoon Liquid Toilet Cleaner 500ml (Buy 1 Get 1 Free)",
-    "image": "https://i.ibb.co.com/2NGHhFy/4.webp",
+    "image": [
+      "https://i.ibb.co.com/2NGHhFy/4.webp",
+      "https://i.ibb.co.com/2NGHhFy/4.webp"
+    ],
     "price": "85",
     "oldprice": "98",
     "SKU": "SKU-HLC-004",
@@ -50,7 +62,10 @@
   {
     "id": 5,
     "title": "Odonil Air Freshener 50(±)2gm (Buy 3 Get 1 Free)",
-    "image": "https://i.ibb.co.com/cF6TjTR/5.webp",
+    "image": [
+      "https://i.ibb.co.com/cF6TjTR/5.webp",
+      "https://i.ibb.co.com/cF6TjTR/5.webp"
+    ],
     "price": "85",
     "oldprice": "115",
     "SKU": "SKU-OAF-005",
@@ -62,7 +77,10 @@
   {
     "id": 6,
     "title": "Mr. White Detergent Powder 1kg (Lemon White Detergent Powder 500gm Free)",
-    "image": "https://i.ibb.co.com/VLGLLFS/6.webp",
+    "image": [
+      "https://i.ibb.co.com/VLGLLFS/6.webp",
+      "https://i.ibb.co.com/VLGLLFS/6.webp"
+    ],
     "price": "55",
     "oldprice": "75",
     "SKU": "SKU-MWD-006",
@@ -74,7 +92,10 @@
   {
     "id": 7,
     "title": "তাজকিরাতুল আউলিয়া",
-    "image": "https://i.ibb.co.com/FbsWQCL/7.jpg",
+    "image": [
+      "https://i.ibb.co.com/FbsWQCL/7.jpg",
+      "https://i.ibb.co.com/FbsWQCL/7.jpg"
+    ],
     "price": "280",
     "oldprice": "300",
     "author": "আল বুশরা প্রকাশনী",
@@ -87,7 +108,10 @@
   {
     "id": 8,
     "title": "YUEERDE- Mini Cooking Pot 1.5 L",
-    "image": "https://i.ibb.co.com/LrZLKWc/8.jpg",
+    "image": [
+      "https://i.ibb.co.com/LrZLKWc/8.jpg",
+      "https://i.ibb.co.com/LrZLKWc/8.jpg"
+    ],
     "price": "260",
     "oldprice": "285",
     "SKU": "SKU-YMC-008",
@@ -99,7 +123,10 @@
   {
     "id": 9,
     "title": "Silicon Spoon & Steel Handle Khunti 1 pc",
-    "image": "https://i.ibb.co.com/vmyDYfM/9.jpg",
+    "image": [
+      "https://i.ibb.co.com/vmyDYfM/9.jpg",
+      "https://i.ibb.co.com/vmyDYfM/9.jpg"
+    ],
     "price": "490",
     "oldprice": "680",
     "SKU": "SKU-SSK-009",
@@ -113,7 +140,10 @@
     "title": "Organic Food",
     "price": "265",
     "oldprice": "285",
-    "image": "https://i.ibb.co.com/LkjRQmG/1.jpg",
+    "image": [
+      "https://i.ibb.co.com/LkjRQmG/1.jpg",
+      "https://i.ibb.co.com/LkjRQmG/1.jpg"
+    ],
     "SKU": "SKU-OF-010",
     "category": "Popular Categories",
     "offer": true,
@@ -125,7 +155,10 @@
     "title": "Baby Formula",
     "price": "275",
     "oldprice": "295",
-    "image": "https://i.ibb.co.com/4YgsZ7L/2.jpg",
+    "image": [
+      "https://i.ibb.co.com/4YgsZ7L/2.jpg",
+      "https://i.ibb.co.com/4YgsZ7L/2.jpg"
+    ],
     "SKU": "SKU-BF-011",
     "category": "Popular Categories",
     "offer": false,
@@ -137,7 +170,10 @@
     "title": "Pharmacy",
     "price": "260",
     "oldprice": "280",
-    "image": "https://i.ibb.co.com/SVCL9kd/3.jpg",
+    "image": [
+      "https://i.ibb.co.com/SVCL9kd/3.jpg",
+      "https://i.ibb.co.com/SVCL9kd/3.jpg"
+    ],
     "SKU": "SKU-PH-012",
     "category": "Popular Categories",
     "offer": false,
@@ -149,7 +185,10 @@
     "title": "Skin Care",
     "price": "255",
     "oldprice": "275",
-    "image": "https://i.ibb.co.com/k63zJf2/4.jpg",
+    "image": [
+      "https://i.ibb.co.com/k63zJf2/4.jpg",
+      "https://i.ibb.co.com/k63zJf2/4.jpg"
+    ],
     "SKU": "SKU-SC-013",
     "category": "Popular Categories",
     "offer": true,
@@ -161,7 +200,10 @@
     "title": "Dairy & Eggs",
     "price": "275",
     "oldprice": "300",
-    "image": "https://i.ibb.co.com/S3tTz05/5.jpg",
+    "image": [
+      "https://i.ibb.co.com/S3tTz05/5.jpg",
+      "https://i.ibb.co.com/S3tTz05/5.jpg"
+    ],
     "SKU": "SKU-DE-014",
     "category": "Popular Categories",
     "offer": false,
@@ -173,7 +215,10 @@
     "title": "Food & Grocery",
     "price": "265",
     "oldprice": "285",
-    "image": "https://i.ibb.co.com/6nXsNzW/6.webp",
+    "image": [
+      "https://i.ibb.co.com/6nXsNzW/6.webp",
+      "https://i.ibb.co.com/6nXsNzW/6.webp"
+    ],
     "SKU": "SKU-FG-015",
     "category": "Popular Categories",
     "offer": true,
@@ -185,7 +230,10 @@
     "title": "Personal Care",
     "price": "270",
     "oldprice": "290",
-    "image": "https://i.ibb.co.com/pWWm6x3/7.png",
+    "image": [
+      "https://i.ibb.co.com/pWWm6x3/7.png",
+      "https://i.ibb.co.com/pWWm6x3/7.png"
+    ],
     "SKU": "SKU-PC-016",
     "category": "Popular Categories",
     "offer": true,
@@ -199,7 +247,10 @@
     "oldprice": "290",
     "author": "আল বুশরা প্রকাশনী",
     "SKU": "SKU-IM-018",
-    "image": "https://i.ibb.co.com/pPrMShV/1.webp",
+    "image": [
+      "https://i.ibb.co.com/pPrMShV/1.webp",
+      "https://i.ibb.co.com/pPrMShV/1.webp"
+    ],
     "category": "Islamic Items",
     "offer": true,
     "rating": "4.5",
@@ -211,7 +262,10 @@
     "price": "290",
     "oldprice": "310",
     "SKU": "SKU-OL-019",
-    "image": "https://i.ibb.co.com/PmKSyJd/2.jpg",
+    "image": [
+      "https://i.ibb.co.com/PmKSyJd/2.jpg",
+      "https://i.ibb.co.com/PmKSyJd/2.jpg"
+    ],
     "category": "Islamic Items",
     "offer": true,
     "rating": "4.5",
@@ -223,7 +277,10 @@
     "price": "280",
     "oldprice": "300",
     "SKU": "SKU-OL-020",
-    "image": "https://i.ibb.co.com/Xt5CG0w/3.jpg",
+    "image": [
+      "https://i.ibb.co.com/Xt5CG0w/3.jpg",
+      "https://i.ibb.co.com/Xt5CG0w/3.jpg"
+    ],
     "category": "Islamic Items",
     "offer": true,
     "rating": "4.5",
@@ -235,7 +292,10 @@
     "price": "285",
     "oldprice": "305",
     "SKU": "SKU-OL-021",
-    "image": "https://i.ibb.co.com/0VxJTG4/4.png",
+    "image": [
+      "https://i.ibb.co.com/0VxJTG4/4.png",
+      "https://i.ibb.co.com/0VxJTG4/4.png"
+    ],
     "category": "Islamic Items",
     "offer": true,
     "rating": "4.5",
@@ -247,7 +307,10 @@
     "price": "270",
     "oldprice": "290",
     "SKU": "SKU-IS-022",
-    "image": "https://i.ibb.co.com/BLZRKrP/5.png",
+    "image": [
+      "https://i.ibb.co.com/BLZRKrP/5.png",
+      "https://i.ibb.co.com/BLZRKrP/5.png"
+    ],
     "category": "Islamic Items",
     "author": "আল বুশরা প্রকাশনী",
     "offer": true,
@@ -259,7 +322,10 @@
     "title": "হিফজ শিক্ষার্থীদের জন্য এমএস ওয়ার্ড এ নমুনা",
     "price": "270",
     "oldprice": "290",
-    "image": "https://i.ibb.co.com/DLgByV0/6.jpg",
+    "image": [
+      "https://i.ibb.co.com/DLgByV0/6.jpg",
+      "https://i.ibb.co.com/DLgByV0/6.jpg"
+    ],
     "SKU": "SKU-IS-023",
     "category": "Islamic Items",
     "offer": true,
@@ -272,7 +338,10 @@
     "price": "270",
     "oldprice": "290",
     "SKU": "SKU-IS-024",
-    "image": "https://i.ibb.co.com/1fr8B8g/6.png",
+    "image": [
+      "https://i.ibb.co.com/1fr8B8g/6.png",
+      "https://i.ibb.co.com/1fr8B8g/6.png"
+    ],
     "category": "Islamic Items",
     "offer": false,
     "rating": "4.5",
@@ -284,7 +353,10 @@
     "price": "290",
     "oldprice": "310",
     "SKU": "SKU-IS-025",
-    "image": "https://i.ibb.co.com/pPrMShV/1.webp",
+    "image": [
+      "https://i.ibb.co.com/pPrMShV/1.webp",
+      "https://i.ibb.co.com/pPrMShV/1.webp"
+    ],
     "category": "Islamic Items",
     "offer": true,
     "rating": "4.5",
@@ -296,7 +368,10 @@
     "price": "1200",
     "oldprice": "1350",
     "SKU": "SKU-IS-026",
-    "image": "https://i.ibb.co/D7FR2QV/1.jpg",
+    "image": [
+      "https://i.ibb.co/D7FR2QV/1.jpg",
+      "https://i.ibb.co/D7FR2QV/1.jpg"
+    ],
     "category": "Organic Food",
     "offer": false,
     "rating": "4.5",
@@ -308,7 +383,10 @@
     "price": "250",
     "oldprice": "270",
     "SKU": "SKU-IS-027",
-    "image": "https://i.ibb.co/8X1vNbC/2.jpg",
+    "image": [
+      "https://i.ibb.co/8X1vNbC/2.jpg",
+      "https://i.ibb.co/8X1vNbC/2.jpg"
+    ],
     "category": "Organic Food",
     "offer": true,
     "rating": "4.5",
@@ -320,7 +398,10 @@
     "price": "300",
     "oldprice": "320",
     "SKU": "SKU-IS-028",
-    "image": "https://i.ibb.co/y4db7cX/3.webp",
+    "image": [
+      "https://i.ibb.co/y4db7cX/3.webp",
+      "https://i.ibb.co/y4db7cX/3.webp"
+    ],
     "category": "Organic Food",
     "offer": false,
     "rating": "4.5",
@@ -332,7 +413,10 @@
     "price": "320",
     "oldprice": "350",
     "SKU": "SKU-IS-029",
-    "image": "https://i.ibb.co/4PkpzXy/4.jpg",
+    "image": [
+      "https://i.ibb.co/4PkpzXy/4.jpg",
+      "https://i.ibb.co/4PkpzXy/4.jpg"
+    ],
     "category": "Organic Food",
     "offer": true,
     "rating": "4.5",
@@ -344,7 +428,10 @@
     "price": "400",
     "oldprice": "450",
     "SKU": "SKU-IS-030",
-    "image": "https://i.ibb.co/QDKFWSg/5.jpg",
+    "image": [
+      "https://i.ibb.co/QDKFWSg/5.jpg",
+      "https://i.ibb.co/QDKFWSg/5.jpg"
+    ],
     "category": "Organic Food",
     "offer": true,
     "rating": "4.5",
@@ -356,7 +443,10 @@
     "price": "700",
     "oldprice": "750",
     "SKU": "SKU-IS-031",
-    "image": "https://i.ibb.co/Z834BYt/6.webp",
+    "image": [
+      "https://i.ibb.co/Z834BYt/6.webp",
+      "https://i.ibb.co/Z834BYt/6.webp"
+    ],
     "category": "Organic Food",
     "offer": true,
     "rating": "4.5",
@@ -368,7 +458,10 @@
     "price": "550",
     "oldprice": "600",
     "SKU": "SKU-IS-032",
-    "image": "https://i.ibb.co/wNtQKDK/7.webp",
+    "image": [
+      "https://i.ibb.co/wNtQKDK/7.webp",
+      "https://i.ibb.co/wNtQKDK/7.webp"
+    ],
     "category": "Organic Food",
     "offer": true,
     "rating": "4.5",
@@ -380,7 +473,10 @@
     "price": "220",
     "oldprice": "240",
     "SKU": "SKU-IS-033",
-    "image": "https://i.ibb.co/2MZq4dS/8.webp",
+    "image": [
+      "https://i.ibb.co/2MZq4dS/8.webp",
+      "https://i.ibb.co/2MZq4dS/8.webp"
+    ],
     "category": "Organic Food",
     "offer": false,
     "rating": "4.5",
@@ -392,7 +488,10 @@
     "price": "280",
     "oldprice": "310",
     "SKU": "SKU-IS-034",
-    "image": "https://i.ibb.co/4JCYdDB/1.jpg",
+    "image": [
+      "https://i.ibb.co/4JCYdDB/1.jpg",
+      "https://i.ibb.co/4JCYdDB/1.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.3",
@@ -404,7 +503,10 @@
     "price": "280",
     "oldprice": "310",
     "SKU": "SKU-IS-035",
-    "image": "https://i.ibb.co/vmyDYfM/9.jpg",
+    "image": [
+      "https://i.ibb.co/vmyDYfM/9.jpg",
+      "https://i.ibb.co/vmyDYfM/9.jpg"
+    ],
     "category": "Featured products",
     "offer": false,
     "rating": "4.3",
@@ -416,7 +518,10 @@
     "price": "320",
     "oldprice": "350",
     "SKU": "SKU-IS-036",
-    "image": "https://i.ibb.co/9mD5CVc/3.jpg",
+    "image": [
+      "https://i.ibb.co/9mD5CVc/3.jpg",
+      "https://i.ibb.co/9mD5CVc/3.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.4",
@@ -428,7 +533,10 @@
     "price": "420",
     "oldprice": "450",
     "SKU": "SKU-IS-037",
-    "image": "https://i.ibb.co/mG0C108/4.jpg",
+    "image": [
+      "https://i.ibb.co/mG0C108/4.jpg",
+      "https://i.ibb.co/mG0C108/4.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.6",
@@ -440,7 +548,10 @@
     "price": "350",
     "oldprice": "380",
     "SKU": "SKU-IS-038",
-    "image": "https://i.ibb.co/pbX1y7N/5.png",
+    "image": [
+      "https://i.ibb.co/pbX1y7N/5.png",
+      "https://i.ibb.co/pbX1y7N/5.png"
+    ],
     "category": "Featured products",
     "offer": false,
     "rating": "4.5",
@@ -452,7 +563,10 @@
     "price": "650",
     "oldprice": "700",
     "SKU": "SKU-IS-039",
-    "image": "https://i.ibb.co/fnxV8vb/6.jpg",
+    "image": [
+      "https://i.ibb.co/fnxV8vb/6.jpg",
+      "https://i.ibb.co/fnxV8vb/6.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.7",
@@ -464,7 +578,10 @@
     "price": "660",
     "oldprice": "710",
     "SKU": "SKU-IS-040",
-    "image": "https://i.ibb.co/f0CpJLk/7.jpg",
+    "image": [
+      "https://i.ibb.co/f0CpJLk/7.jpg",
+      "https://i.ibb.co/f0CpJLk/7.jpg"
+    ],
     "category": "Featured products",
     "offer": false,
     "description": "Cook your favorite dishes effortlessly with this Electric Double Layer Non-stick Cooking Pot. The double-layer design offers even heat distribution, ensuring that your food is cooked perfectly every time. The non-stick coating makes cleaning a breeze, while the compact size is perfect for small kitchens or limited counter space. Ideal for soups, stews, and hot pots, this electric cooking pot is both practical and stylish."
@@ -475,7 +592,10 @@
     "price": "670",
     "oldprice": "720",
     "SKU": "SKU-IS-041",
-    "image": "https://i.ibb.co/CsWgw7z/8.jpg",
+    "image": [
+      "https://i.ibb.co/CsWgw7z/8.jpg",
+      "https://i.ibb.co/CsWgw7z/8.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.8",
@@ -487,7 +607,10 @@
     "price": "300",
     "oldprice": "330",
     "SKU": "SKU-IS-042",
-    "image": "https://i.ibb.co/qCpq2yG/9.jpg",
+    "image": [
+      "https://i.ibb.co/qCpq2yG/9.jpg",
+      "https://i.ibb.co/qCpq2yG/9.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.4",
@@ -499,7 +622,10 @@
     "price": "750",
     "oldprice": "800",
     "SKU": "SKU-IS-043",
-    "image": "https://i.ibb.co/fQQGLpb/10.jpg",
+    "image": [
+      "https://i.ibb.co/fQQGLpb/10.jpg",
+      "https://i.ibb.co/fQQGLpb/10.jpg"
+    ],
     "category": "Featured products",
     "offer": true,
     "rating": "4.7",
@@ -516,7 +642,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "This Silicon Spoon & Steel Handle Khunti is perfect for your kitchen needs. It’s heat-resistant, non-stick, and offers a comfortable grip with its steel handle. Ideal for stirring, frying, and serving, making it an essential tool for any cooking enthusiast.",
-    "image": "https://i.ibb.co.com/4JCYdDB/1.jpg"
+    "image": [
+      "https://i.ibb.co.com/4JCYdDB/1.jpg",
+      "https://i.ibb.co.com/4JCYdDB/1.jpg"
+    ]
   },
   {
     "id": 45,
@@ -528,7 +657,10 @@
     "offer": false,
     "rating": "4.6",
     "description": "Keep your kitchen organized with this 500ml Glass Oil Jar. The steel cover ensures freshness while adding a touch of elegance to your kitchen. This jar is perfect for storing olive oil, vinegar, or any other oils you use for cooking.",
-    "image": "https://i.ibb.co.com/vmyDYfM/9.jpg"
+    "image": [
+      "https://i.ibb.co.com/vmyDYfM/9.jpg",
+      "https://i.ibb.co.com/vmyDYfM/9.jpg"
+    ]
   },
   {
     "id": 46,
@@ -540,7 +672,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "This YUEERDE Mini Cooking Pot with a 1.5L capacity is designed for quick meals and everyday cooking. It features a non-stick surface for easy cooking and cleaning, and it’s perfect for small families or individuals.",
-    "image": "https://i.ibb.co.com/9mD5CVc/3.jpg"
+    "image": [
+      "https://i.ibb.co.com/9mD5CVc/3.jpg",
+      "https://i.ibb.co.com/9mD5CVc/3.jpg"
+    ]
   },
   {
     "id": 47,
@@ -552,7 +687,10 @@
     "offer": false,
     "rating": "4.9",
     "description": "This Electric Double Layer Non-stick Cooking Pot features advanced technology for even cooking. With dual layers and non-stick coating, it ensures quick and efficient cooking with minimal oil. A must-have for anyone who loves fast and healthy meals.",
-    "image": "https://i.ibb.co.com/mG0C108/4.jpg"
+    "image": [
+      "https://i.ibb.co.com/mG0C108/4.jpg",
+      "https://i.ibb.co.com/mG0C108/4.jpg"
+    ]
   },
   {
     "id": 48,
@@ -564,7 +702,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "The Electric Double Layer Non-stick Cooking Pot offers even heat distribution, a large cooking capacity, and an energy-efficient design. Ideal for making stews, soups, and other dishes with ease. The non-stick coating ensures easy cleaning.",
-    "image": "https://i.ibb.co.com/pbX1y7N/5.png"
+    "image": [
+      "https://i.ibb.co.com/pbX1y7N/5.png",
+      "https://i.ibb.co.com/pbX1y7N/5.png"
+    ]
   },
   {
     "id": 49,
@@ -576,7 +717,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "A premium Electric Double Layer Non-stick Cooking Pot that promises durability and ease of use. With its advanced technology, it helps cook faster while retaining nutrients, making it ideal for healthy cooking.",
-    "image": "https://i.ibb.co.com/fnxV8vb/6.jpg"
+    "image": [
+      "https://i.ibb.co.com/fnxV8vb/6.jpg",
+      "https://i.ibb.co.com/fnxV8vb/6.jpg"
+    ]
   },
   {
     "id": 50,
@@ -588,7 +732,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "This Electric Double Layer Non-stick Cooking Pot is designed for those who need a reliable and fast cooking solution. It’s easy to use, clean, and maintains consistent cooking temperatures for perfect results every time.",
-    "image": "https://i.ibb.co.com/f0CpJLk/7.jpg"
+    "image": [
+      "https://i.ibb.co.com/f0CpJLk/7.jpg",
+      "https://i.ibb.co.com/f0CpJLk/7.jpg"
+    ]
   },
   {
     "id": 51,
@@ -600,7 +747,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "This Electric BBQ Grill Machine combines convenience with performance. It’s compact yet powerful, allowing you to grill meats, vegetables, and more in the comfort of your own kitchen or backyard. A versatile and must-have kitchen gadget.",
-    "image": "https://i.ibb.co.com/CsWgw7z/8.jpg"
+    "image": [
+      "https://i.ibb.co.com/CsWgw7z/8.jpg",
+      "https://i.ibb.co.com/CsWgw7z/8.jpg"
+    ]
   },
   {
     "id": 52,
@@ -612,7 +762,10 @@
     "offer": false,
     "rating": "4.7",
     "description": "Johnson's Baby Soap is gentle on the skin, perfect for sensitive skin types. The 50gm soap offers a mild lather and soothing fragrance, making it ideal for both adults and babies alike. Great value with the Buy 3 Get 1 Free offer!",
-    "image": "https://i.ibb.co.com/NVnQXsB/3.webp"
+    "image": [
+      "https://i.ibb.co.com/NVnQXsB/3.webp",
+      "https://i.ibb.co.com/NVnQXsB/3.webp"
+    ]
   },
   {
     "id": 53,
@@ -624,7 +777,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "Veet Hair Removal Cream is formulated for normal skin. It gently removes unwanted hair and leaves your skin feeling smooth. Easy to use and effective, this product provides fast results, ensuring soft, hair-free skin in minutes.",
-    "image": "https://i.ibb.co.com/cD6FJyZ/2.webp"
+    "image": [
+      "https://i.ibb.co.com/cD6FJyZ/2.webp",
+      "https://i.ibb.co.com/cD6FJyZ/2.webp"
+    ]
   },
   {
     "id": 54,
@@ -636,7 +792,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Freedom Super Dry Heavy Flow Pads offer superior absorbency and comfort for women. Designed with wings for a secure fit, these pads are perfect for overnight use or heavy days, providing all-day dryness and freshness.",
-    "image": "https://i.ibb.co.com/YDM460T/3.webp"
+    "image": [
+      "https://i.ibb.co.com/YDM460T/3.webp",
+      "https://i.ibb.co.com/YDM460T/3.webp"
+    ]
   },
   {
     "id": 55,
@@ -648,7 +807,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "He Ruler Perfume Body Spray is a premium fragrance for both men and women. With its captivating blend of aromatic notes, it’s perfect for daily wear or special occasions. The 150ml bottle offers long-lasting freshness.",
-    "image": "https://i.ibb.co.com/nLggKHY/4.webp"
+    "image": [
+      "https://i.ibb.co.com/nLggKHY/4.webp",
+      "https://i.ibb.co.com/nLggKHY/4.webp"
+    ]
   },
   {
     "id": 56,
@@ -660,7 +822,10 @@
     "offer": false,
     "rating": "4.7",
     "description": "He Respect Perfumed Body Spray is designed to leave you feeling confident and fresh. Its 150ml bottle contains a balanced scent that is subtle yet powerful, making it a perfect addition to your fragrance collection.",
-    "image": "https://i.ibb.co.com/R95kXb6/5.webp"
+    "image": [
+      "https://i.ibb.co.com/R95kXb6/5.webp",
+      "https://i.ibb.co.com/R95kXb6/5.webp"
+    ]
   },
   {
     "id": 57,
@@ -672,7 +837,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "Axe Black Pera Body Spray is a refreshing fragrance that offers long-lasting freshness. Ideal for any occasion, this 150ml body spray is perfect for men who enjoy a bold and invigorating scent.",
-    "image": "https://i.ibb.co.com/1rtszzX/6.webp"
+    "image": [
+      "https://i.ibb.co.com/1rtszzX/6.webp",
+      "https://i.ibb.co.com/1rtszzX/6.webp"
+    ]
   },
   {
     "id": 58,
@@ -684,7 +852,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Tresemme Keratin Smooth Shampoo is perfect for those who want smooth, shiny, and frizz-free hair. The 185ml bottle is enriched with keratin, offering salon-quality results that leave your hair feeling soft and manageable.",
-    "image": "https://i.ibb.co.com/FshpVY1/8.webp"
+    "image": [
+      "https://i.ibb.co.com/FshpVY1/8.webp",
+      "https://i.ibb.co.com/FshpVY1/8.webp"
+    ]
   },
   {
     "id": 59,
@@ -696,7 +867,10 @@
     "offer": false,
     "rating": "4.6",
     "description": "Tresemme Keratin Smooth Shampoo with its unique formula helps to keep your hair straight, frizz-free, and smooth all day long. Enriched with keratin, this shampoo works to nourish hair and restore its natural shine.",
-    "image": "https://i.ibb.co.com/WxLfb37/9.webp"
+    "image": [
+      "https://i.ibb.co.com/WxLfb37/9.webp",
+      "https://i.ibb.co.com/WxLfb37/9.webp"
+    ]
   },
   {
     "id": 60,
@@ -708,7 +882,10 @@
     "offer": false,
     "rating": "4.8",
     "description": "Odonil Air Freshener offers a fresh, long-lasting fragrance to eliminate unpleasant odors in your home or office. It is designed to create a refreshing environment and is perfect for use in living rooms, bathrooms, and kitchens.",
-    "image": "https://i.ibb.co/9rkWpkw/6.webp"
+    "image": [
+      "https://i.ibb.co/9rkWpkw/6.webp",
+      "https://i.ibb.co/9rkWpkw/6.webp"
+    ]
   },
   {
     "id": 61,
@@ -720,7 +897,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "Harpoon Liquid Toilet Cleaner helps to clean and disinfect toilet bowls. Its powerful formula eliminates stains, odors, and germs, leaving your bathroom smelling fresh and hygienic.",
-    "image": "https://i.ibb.co/TYdL71n/4.webp"
+    "image": [
+      "https://i.ibb.co/TYdL71n/4.webp",
+      "https://i.ibb.co/TYdL71n/4.webp"
+    ]
   },
   {
     "id": 62,
@@ -732,7 +912,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "Magic Floor Cleaner is an effective cleaning tool for your floors. It easily removes dirt, dust, and stains, leaving your floors shiny and hygienic. Ideal for use on various surfaces like tiles, wood, and marble.",
-    "image": "https://i.ibb.co/XZKNZRb/8.webp"
+    "image": [
+      "https://i.ibb.co/XZKNZRb/8.webp",
+      "https://i.ibb.co/XZKNZRb/8.webp"
+    ]
   },
   {
     "id": 63,
@@ -744,7 +927,10 @@
     "offer": false,
     "rating": "4.9",
     "description": "Seylon Gold Tea is a premium quality tea made from the finest leaves of Sri Lanka. Known for its rich aroma and smooth taste, it is perfect for a refreshing cup of tea any time of the day.",
-    "image": "https://i.ibb.co/59dgWxb/5.webp"
+    "image": [
+      "https://i.ibb.co/59dgWxb/5.webp",
+      "https://i.ibb.co/59dgWxb/5.webp"
+    ]
   },
   {
     "id": 64,
@@ -756,7 +942,10 @@
     "offer": true,
     "rating": "4.4",
     "description": "Paka Pape Thai is a high-quality rice flour used for making traditional Thai dishes. It’s finely milled for smooth textures and is perfect for making soups, curries, and desserts.",
-    "image": "https://i.ibb.co/5rDyCYr/7.webp"
+    "image": [
+      "https://i.ibb.co/5rDyCYr/7.webp",
+      "https://i.ibb.co/5rDyCYr/7.webp"
+    ]
   },
   {
     "id": 65,
@@ -768,7 +957,10 @@
     "offer": true,
     "rating": "4.3",
     "description": "Green Apples are fresh, crisp, and healthy fruits that are great for snacking or making juices and smoothies. They are packed with vitamins and antioxidants to keep you energized throughout the day.",
-    "image": "https://i.ibb.co/cF6TjTR/5.webp"
+    "image": [
+      "https://i.ibb.co/cF6TjTR/5.webp",
+      "https://i.ibb.co/cF6TjTR/5.webp"
+    ]
   },
   {
     "id": 66,
@@ -780,7 +972,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Shagor Kola (Banana Sagor) is a variety of banana known for its sweet taste and soft texture. A perfect snack for any time, it can also be used in desserts or salads.",
-    "image": "https://i.ibb.co/2NGHhFy/4.webp"
+    "image": [
+      "https://i.ibb.co/2NGHhFy/4.webp",
+      "https://i.ibb.co/2NGHhFy/4.webp"
+    ]
   },
   {
     "id": 67,
@@ -792,7 +987,10 @@
     "offer": false,
     "rating": "4.7",
     "description": "Paragon Omega 3+ Eggs are enriched with Omega 3 fatty acids, providing a healthier alternative to regular eggs. These eggs help support heart health and improve brain function.",
-    "image": "https://i.ibb.co/CsWgw7z/8.jpg"
+    "image": [
+      "https://i.ibb.co/CsWgw7z/8.jpg",
+      "https://i.ibb.co/CsWgw7z/8.jpg"
+    ]
   },
   {
     "id": 68,
@@ -804,7 +1002,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "Johnson's Baby Soap is gentle on your baby's skin, providing soft and smooth care. It is free from harsh chemicals and is dermatologically tested to keep your baby’s skin nourished and moisturized.",
-    "image": "https://i.ibb.co.com/NVnQXsB/3.webp"
+    "image": [
+      "https://i.ibb.co.com/NVnQXsB/3.webp",
+      "https://i.ibb.co.com/NVnQXsB/3.webp"
+    ]
   },
   {
     "id": 69,
@@ -816,7 +1017,10 @@
     "offer": false,
     "rating": "4.6",
     "description": "Nivea Men Dry Impact Deodorant provides long-lasting protection from sweat and body odor. It leaves your skin feeling fresh and dry all day long, with a subtle fragrance.",
-    "image": "https://i.ibb.co.com/Hg2PxXH/2.webp"
+    "image": [
+      "https://i.ibb.co.com/Hg2PxXH/2.webp",
+      "https://i.ibb.co.com/Hg2PxXH/2.webp"
+    ]
   },
   {
     "id": 70,
@@ -828,7 +1032,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Vaseline Healthy Bright Daily Brightening Lotion nourishes your skin with Vitamin B3 and micro-droplets of Vaseline Jelly. It helps brighten skin, making it look healthier and more radiant.",
-    "image": "https://i.ibb.co.com/XZtHvF1/3.webp"
+    "image": [
+      "https://i.ibb.co.com/XZtHvF1/3.webp",
+      "https://i.ibb.co.com/XZtHvF1/3.webp"
+    ]
   },
   {
     "id": 71,
@@ -840,7 +1047,10 @@
     "offer": false,
     "rating": "4.4",
     "description": "Vaseline Healthy Bright Daily Brightening Lotion is formulated to deliver soft, glowing skin. It provides deep moisture while brightening your skin tone with regular use.",
-    "image": "https://i.ibb.co.com/7XzpqLV/4.webp"
+    "image": [
+      "https://i.ibb.co.com/7XzpqLV/4.webp",
+      "https://i.ibb.co.com/7XzpqLV/4.webp"
+    ]
   },
   {
     "id": 72,
@@ -852,7 +1062,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Vaseline Healthy Bright Daily Brightening Lotion provides the essential care your skin needs. With the help of Vitamin B3 and Vaseline Jelly, it helps improve your skin’s appearance and feel.",
-    "image": "https://i.ibb.co.com/7SVjZP1/5.webp"
+    "image": [
+      "https://i.ibb.co.com/7SVjZP1/5.webp",
+      "https://i.ibb.co.com/7SVjZP1/5.webp"
+    ]
   },
   {
     "id": 73,
@@ -864,7 +1077,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "Crème21 All Day Cream with Vitamin B5 deeply moisturizes and protects your skin throughout the day. It leaves your skin feeling soft and smooth while providing essential nutrients to maintain healthy skin.",
-    "image": "https://i.ibb.co.com/5r7fMzC/6.webp"
+    "image": [
+      "https://i.ibb.co.com/5r7fMzC/6.webp",
+      "https://i.ibb.co.com/5r7fMzC/6.webp"
+    ]
   },
   {
     "id": 74,
@@ -876,7 +1092,10 @@
     "offer": false,
     "rating": "4.4",
     "description": "He Ruler Perfume Body Spray provides an irresistible fragrance with a long-lasting effect. Its fresh and clean scent will keep you feeling confident and rejuvenated throughout the day.",
-    "image": "https://i.ibb.co.com/nLggKHY/4.webp"
+    "image": [
+      "https://i.ibb.co.com/nLggKHY/4.webp",
+      "https://i.ibb.co.com/nLggKHY/4.webp"
+    ]
   },
   {
     "id": 75,
@@ -888,7 +1107,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "He Respect Perfumed Body Spray offers a sophisticated and fresh fragrance. It is designed to keep you smelling great all day while providing a refreshing feeling.",
-    "image": "https://i.ibb.co.com/1rtszzX/6.webp"
+    "image": [
+      "https://i.ibb.co.com/1rtszzX/6.webp",
+      "https://i.ibb.co.com/1rtszzX/6.webp"
+    ]
   },
   {
     "id": 76,
@@ -900,7 +1122,10 @@
     "offer": false,
     "rating": "4.7",
     "description": "Johnson's Baby Soap is designed for your baby's delicate skin. With its gentle formula, it provides a smooth, soothing touch to your little one's skin. Perfect for daily use and comes with a special offer - Buy 3 Get 1 Free.",
-    "image": "https://i.ibb.co/NVnQXsB/3.webp"
+    "image": [
+      "https://i.ibb.co/NVnQXsB/3.webp",
+      "https://i.ibb.co/NVnQXsB/3.webp"
+    ]
   },
   {
     "id": 77,
@@ -912,7 +1137,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "Fresh Happy Nappy Pant Diapers are designed for your growing baby. These XXL-sized diapers provide ultimate comfort and absorption for babies weighing 12-25 kg. Ideal for active babies with a comfortable and soft fit.",
-    "image": "https://i.ibb.co/fGg6krh/2.webp"
+    "image": [
+      "https://i.ibb.co/fGg6krh/2.webp",
+      "https://i.ibb.co/fGg6krh/2.webp"
+    ]
   },
   {
     "id": 78,
@@ -924,7 +1152,10 @@
     "offer": false,
     "rating": "4.6",
     "description": "Fresh Happy Nappy Pant Diapers are ideal for your baby’s comfort. These XXL diapers are designed to fit babies weighing 12-25 kg, offering leakage protection and breathability for long-lasting dryness.",
-    "image": "https://i.ibb.co/jLKssk3/3.webp"
+    "image": [
+      "https://i.ibb.co/jLKssk3/3.webp",
+      "https://i.ibb.co/jLKssk3/3.webp"
+    ]
   },
   {
     "id": 79,
@@ -936,7 +1167,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "Happy Nappy Pant Diapers provide exceptional protection and comfort. These diapers are specially designed for babies in the XXL size range, ensuring leak-proof and comfortable wear throughout the day and night.",
-    "image": "https://i.ibb.co/GvtQBjH/4.webp"
+    "image": [
+      "https://i.ibb.co/GvtQBjH/4.webp",
+      "https://i.ibb.co/GvtQBjH/4.webp"
+    ]
   },
   {
     "id": 80,
@@ -948,7 +1182,10 @@
     "offer": false,
     "rating": "4.9",
     "description": "Fresh Happy Nappy Pant Diapers ensure your baby's comfort with a soft and breathable material, perfect for babies in the 12-25 kg weight range. They provide reliable protection against leaks, making them a parent's trusted choice.",
-    "image": "https://i.ibb.co/fGg6krh/2.webp"
+    "image": [
+      "https://i.ibb.co/fGg6krh/2.webp",
+      "https://i.ibb.co/fGg6krh/2.webp"
+    ]
   },
   {
     "id": 81,
@@ -960,7 +1197,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Avonee Double Extra Large Pants offer your baby a high-quality diapering experience. These pants are designed for babies weighing 14-25 kg, providing soft, absorbent, and leak-proof protection all day.",
-    "image": "https://i.ibb.co/NpKFSN1/6.webp"
+    "image": [
+      "https://i.ibb.co/NpKFSN1/6.webp",
+      "https://i.ibb.co/NpKFSN1/6.webp"
+    ]
   },
   {
     "id": 82,
@@ -972,7 +1212,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "Designed for growing babies, the Avonee Double Extra Large Pants are perfect for babies in the 14-25 kg weight range. They offer a snug fit, excellent absorption, and long-lasting dryness for your baby’s comfort.",
-    "image": "https://i.ibb.co/fGg6krh/2.webp"
+    "image": [
+      "https://i.ibb.co/fGg6krh/2.webp",
+      "https://i.ibb.co/fGg6krh/2.webp"
+    ]
   },
   {
     "id": 83,
@@ -984,7 +1227,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "These Avonee Pants are designed to meet the needs of your growing child, providing a comfortable, secure fit for babies 14-25 kg. The pants offer great absorption and leak protection for your baby’s happiness.",
-    "image": "https://i.ibb.co/GvtQBjH/4.webp"
+    "image": [
+      "https://i.ibb.co/GvtQBjH/4.webp",
+      "https://i.ibb.co/GvtQBjH/4.webp"
+    ]
   },
   {
     "id": 84,
@@ -996,7 +1242,10 @@
     "offer": false,
     "rating": "4.8",
     "description": "Nestlé Nido 1+ Growing Up Milk Powder is a nutrition-packed formula designed to help your child grow strong and healthy. It contains essential vitamins and minerals, perfect for children aged 1-3 years.",
-    "image": "https://i.ibb.co/rfkcVVj/2.jpg"
+    "image": [
+      "https://i.ibb.co/rfkcVVj/2.jpg",
+      "https://i.ibb.co/rfkcVVj/2.jpg"
+    ]
   },
   {
     "id": 85,
@@ -1008,7 +1257,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "Nestlé Nido 1+ Growing Up Milk Powder provides the ideal nutritional support for your growing child. Rich in vitamins and minerals, it supports healthy growth for children aged 1-3 years.",
-    "image": "https://i.ibb.co/CWnSjfW/2.jpg"
+    "image": [
+      "https://i.ibb.co/CWnSjfW/2.jpg",
+      "https://i.ibb.co/CWnSjfW/2.jpg"
+    ]
   },
   {
     "id": 86,
@@ -1020,7 +1272,10 @@
     "offer": false,
     "rating": "4.6",
     "description": "Support your child’s healthy development with Nestlé Nido 1+ Growing Up Milk Powder. With essential nutrients, this milk powder promotes a strong immune system and overall growth for children aged 1-3.",
-    "image": "https://i.ibb.co/NWcbxBr/1.jpg"
+    "image": [
+      "https://i.ibb.co/NWcbxBr/1.jpg",
+      "https://i.ibb.co/NWcbxBr/1.jpg"
+    ]
   },
   {
     "id": 87,
@@ -1032,7 +1287,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "Nestlé Nido 1+ Growing Up Milk Powder is an ideal supplement to your child’s diet, providing essential nutrients for optimal growth and development in children aged 1-3 years.",
-    "image": "https://i.ibb.co/JdX2gF6/4.jpg"
+    "image": [
+      "https://i.ibb.co/JdX2gF6/4.jpg",
+      "https://i.ibb.co/JdX2gF6/4.jpg"
+    ]
   },
   {
     "id": 88,
@@ -1044,7 +1302,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "These Premium Dried Figs are packed with natural sweetness and packed with health benefits. Full of fiber, vitamins, and minerals, they are a great snack option to include in your daily diet.",
-    "image": "https://i.ibb.co/72v8kw1/5.jpg"
+    "image": [
+      "https://i.ibb.co/72v8kw1/5.jpg",
+      "https://i.ibb.co/72v8kw1/5.jpg"
+    ]
   },
   {
     "id": 90,
@@ -1056,7 +1317,10 @@
     "offer": false,
     "rating": "4.9",
     "description": "Nestlé Nan Optipro 2 Formula Milk Powder provides complete nutrition for babies 6 months and older. It supports healthy growth, a strong immune system, and proper digestion, making it a great choice for your baby’s first formula.",
-    "image": "https://i.ibb.co/Xt5CG0w/3.jpg"
+    "image": [
+      "https://i.ibb.co/Xt5CG0w/3.jpg",
+      "https://i.ibb.co/Xt5CG0w/3.jpg"
+    ]
   },
   {
     "id": 91,
@@ -1069,7 +1333,10 @@
     "offer": true,
     "rating": "4.3",
     "description": "The A4Tech Bloody M90 TWS ANC Bluetooth Earbuds deliver superior sound quality with pure bass technology. Designed for gamers and music lovers alike, these wireless earbuds feature Active Noise Cancellation (ANC) for immersive audio, ensuring an uninterrupted experience. The ergonomic design provides a comfortable fit for long hours of use, making them perfect for gaming sessions or on-the-go listening.",
-    "image": "https://i.ibb.co/KbRqzTv/1.jpg"
+    "image": [
+      "https://i.ibb.co/KbRqzTv/1.jpg",
+      "https://i.ibb.co/KbRqzTv/1.jpg"
+    ]
   },
   {
     "id": 92,
@@ -1082,7 +1349,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "The Anker Soundcore Liberty Air 2 Pro ANC True Wireless Earbuds offer exceptional sound with hybrid noise-canceling technology. These earbuds are equipped with a customizable equalizer for superior sound quality, allowing you to adjust the bass and treble to your preference. Their ergonomic design ensures a secure and comfortable fit, perfect for workouts or daily use.",
-    "image": "https://i.ibb.co/nRkb90v/2.jpg"
+    "image": [
+      "https://i.ibb.co/nRkb90v/2.jpg",
+      "https://i.ibb.co/nRkb90v/2.jpg"
+    ]
   },
   {
     "id": 93,
@@ -1095,7 +1365,10 @@
     "offer": false,
     "rating": "4.5",
     "description": "The SanDisk Ultra Flair USB 3.0 Flash Drive provides fast transfer speeds for quickly moving large files. With 128GB of storage, it offers ample space for photos, videos, and documents. The sleek, durable metal design ensures it can withstand everyday wear and tear while providing reliable performance for all your storage needs.",
-    "image": "https://i.ibb.co/CntH1pk/3.jpg"
+    "image": [
+      "https://i.ibb.co/CntH1pk/3.jpg",
+      "https://i.ibb.co/CntH1pk/3.jpg"
+    ]
   },
   {
     "id": 94,
@@ -1108,7 +1381,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "The Sandisk Ultra Dual Drive Go 128GB USB Type-C Flash Drive allows you to quickly transfer data between USB Type-C and Type-A devices. Its compact design makes it ideal for on-the-go storage, while its 128GB capacity provides plenty of space for your files. The fast read and write speeds ensure efficient file transfers without delays.",
-    "image": "https://i.ibb.co/sHs2bj1/4.jpg"
+    "image": [
+      "https://i.ibb.co/sHs2bj1/4.jpg",
+      "https://i.ibb.co/sHs2bj1/4.jpg"
+    ]
   },
   {
     "id": 95,
@@ -1121,7 +1397,10 @@
     "offer": false,
     "rating": "4.4",
     "description": "The ADATA UV150 64GB USB 3.2 Pen Drive offers high-speed performance with its USB 3.2 interface, making it a perfect option for transferring large files quickly. Its 64GB storage capacity is suitable for storing important documents, photos, and videos. The sleek black design ensures portability and durability, making it a reliable choice for everyday use.",
-    "image": "https://i.ibb.co/WnF9BBK/5.jpg"
+    "image": [
+      "https://i.ibb.co/WnF9BBK/5.jpg",
+      "https://i.ibb.co/WnF9BBK/5.jpg"
+    ]
   },
   {
     "id": 96,
@@ -1134,7 +1413,10 @@
     "offer": true,
     "rating": "4.2",
     "description": "The Adata UV128 32GB USB 3.2 Pen Drive features high-speed data transfer with the latest USB 3.2 technology. Its 32GB capacity is ideal for users who need to carry documents, photos, or videos with ease. The stylish black-blue design adds a touch of modernity while providing the durability needed for regular use.",
-    "image": "https://i.ibb.co/RSDS3Hc/6.jpg"
+    "image": [
+      "https://i.ibb.co/RSDS3Hc/6.jpg",
+      "https://i.ibb.co/RSDS3Hc/6.jpg"
+    ]
   },
   {
     "id": 97,
@@ -1147,7 +1429,10 @@
     "offer": true,
     "rating": "4.1",
     "description": "The REMAX RB-M8 Mini Portable Bluetooth Speaker offers high-quality sound in a compact design. Featuring Bluetooth 4.0 technology, it provides seamless connection with your mobile devices for on-the-go listening. The sleek black finish ensures it looks great while delivering powerful sound for music, podcasts, or calls.",
-    "image": "https://i.ibb.co/qrxCxHr/7.jpg"
+    "image": [
+      "https://i.ibb.co/qrxCxHr/7.jpg",
+      "https://i.ibb.co/qrxCxHr/7.jpg"
+    ]
   },
   {
     "id": 98,
@@ -1160,7 +1445,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "The Sony XG500 X-Series Portable Wireless Speaker delivers powerful, room-filling sound with its X-Balanced speakers. Designed for portability, it’s ideal for outdoor gatherings and events. With a rugged build, long battery life, and water resistance, this speaker is built to withstand all conditions while providing premium audio performance.",
-    "image": "https://i.ibb.co/DWSCPX6/8.jpg"
+    "image": [
+      "https://i.ibb.co/DWSCPX6/8.jpg",
+      "https://i.ibb.co/DWSCPX6/8.jpg"
+    ]
   },
   {
     "id": 99,
@@ -1170,7 +1458,10 @@
     "SKU": "SSKH1PC-2024",
     "category": "Electronics",
     "offer": true,
-    "image": "https://i.ibb.co.com/4JCYdDB/1.jpg",
+    "image": [
+      "https://i.ibb.co.com/4JCYdDB/1.jpg",
+      "https://i.ibb.co.com/4JCYdDB/1.jpg"
+    ],
     "rating": "4.8",
     "description": "This Silicon Spoon & Steel Handle Khunti is perfect for your kitchen needs. It’s heat-resistant, non-stick, and offers a comfortable grip with its steel handle. Ideal for stirring, frying, and serving, making it an essential tool for any cooking enthusiast."
   },
@@ -1181,7 +1472,10 @@
     "oldprice": "250",
     "SKU": "KOJGS500-2024",
     "category": "Electronics",
-    "image": "https://i.ibb.co.com/vmyDYfM/9.jpg",
+    "image": [
+      "https://i.ibb.co.com/vmyDYfM/9.jpg",
+      "https://i.ibb.co.com/vmyDYfM/9.jpg"
+    ],
     "offer": false,
     "rating": "4.6",
     "description": "Keep your kitchen organized with this 500ml Glass Oil Jar. The steel cover ensures freshness while adding a touch of elegance to your kitchen. This jar is perfect for storing olive oil, vinegar, or any other oils you use for cooking."
@@ -1193,7 +1487,10 @@
     "oldprice": "520",
     "SKU": "YMP1.5L-2024",
     "category": "Electronics",
-    "image": "https://i.ibb.co.com/9mD5CVc/3.jpg",
+    "image": [
+      "https://i.ibb.co.com/9mD5CVc/3.jpg",
+      "https://i.ibb.co.com/9mD5CVc/3.jpg"
+    ],
     "offer": true,
     "rating": "4.7",
     "description": "This YUEERDE Mini Cooking Pot with a 1.5L capacity is designed for quick meals and everyday cooking. It features a non-stick surface for easy cooking and cleaning, and it’s perfect for small families or individuals."
@@ -1205,7 +1502,10 @@
     "oldprice": "950",
     "SKU": "EDLNP-2024",
     "category": "Electronics",
-    "image": "https://i.ibb.co.com/mG0C108/4.jpg",
+    "image": [
+      "https://i.ibb.co.com/mG0C108/4.jpg",
+      "https://i.ibb.co.com/mG0C108/4.jpg"
+    ],
     "offer": true,
     "rating": "4.9",
     "description": "This Electric Double Layer Non-stick Cooking Pot features advanced technology for even cooking. With dual layers and non-stick coating, it ensures quick and efficient cooking with minimal oil. A must-have for anyone who loves fast and healthy meals."
@@ -1217,7 +1517,10 @@
     "oldprice": "1000",
     "SKU": "EDLNP-2024-2",
     "category": "Electronics",
-    "image": "https://i.ibb.co.com/pbX1y7N/5.png",
+    "image": [
+      "https://i.ibb.co.com/pbX1y7N/5.png",
+      "https://i.ibb.co.com/pbX1y7N/5.png"
+    ],
     "offer": false,
     "rating": "4.6",
     "description": "The Electric Double Layer Non-stick Cooking Pot offers even heat distribution, a large cooking capacity, and an energy-efficient design. Ideal for making stews, soups, and other dishes with ease. The non-stick coating ensures easy cleaning."
@@ -1229,7 +1532,10 @@
     "oldprice": "1050",
     "SKU": "EDLNP-2024-3",
     "category": "Electronics",
-    "image": "https://i.ibb.co.com/fnxV8vb/6.jpg",
+    "image": [
+      "https://i.ibb.co.com/fnxV8vb/6.jpg",
+      "https://i.ibb.co.com/fnxV8vb/6.jpg"
+    ],
     "offer": true,
     "rating": "4.7",
     "description": "A premium Electric Double Layer Non-stick Cooking Pot that promises durability and ease of use. With its advanced technology, it helps cook faster while retaining nutrients, making it ideal for healthy cooking."
@@ -1241,7 +1547,10 @@
     "oldprice": "1100",
     "SKU": "EDLNP-2024-4",
     "category": "Electronics",
-    "image": "https://i.ibb.co.com/f0CpJLk/7.jpg",
+    "image": [
+      "https://i.ibb.co.com/f0CpJLk/7.jpg",
+      "https://i.ibb.co.com/f0CpJLk/7.jpg"
+    ],
     "offer": true,
     "rating": "4.8",
     "description": "This Electric Double Layer Non-stick Cooking Pot is designed for those who need a reliable and fast cooking solution. It’s easy to use, clean, and maintains consistent cooking temperatures for perfect results every time."
@@ -1252,7 +1561,10 @@
     "price": "1600",
     "oldprice": "1700",
     "SKU": "BBQ1-2024",
-    "image": "https://i.ibb.co.com/CsWgw7z/8.jpg",
+    "image": [
+      "https://i.ibb.co.com/CsWgw7z/8.jpg",
+      "https://i.ibb.co.com/CsWgw7z/8.jpg"
+    ],
     "category": "Electronics",
     "offer": true,
     "rating": "4.5",
@@ -1270,7 +1582,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "This Acupressure Sandal is designed to help improve circulation, reduce stress, and stimulate acupressure points on your feet for better overall health. It is made from durable material and provides comfort while offering therapeutic benefits.",
-    "image": "https://i.ibb.co/yBzd84h/1.jpg"
+    "image": [
+      "https://i.ibb.co/yBzd84h/1.jpg",
+      "https://i.ibb.co/yBzd84h/1.jpg"
+    ]
   },
   {
     "id": 108,
@@ -1283,7 +1598,10 @@
     "offer": false,
     "rating": "4.6",
     "description": "ACI Savlon Liquid Antiseptic is a highly effective disinfectant that kills germs and prevents infections. Ideal for cleaning wounds, cuts, and abrasions, it offers a gentle yet powerful solution for maintaining hygiene.",
-    "image": "https://i.ibb.co/N9xPCgj/2.webp"
+    "image": [
+      "https://i.ibb.co/N9xPCgj/2.webp",
+      "https://i.ibb.co/N9xPCgj/2.webp"
+    ]
   },
   {
     "id": 109,
@@ -1295,7 +1613,10 @@
     "offer": true,
     "rating": "4.8",
     "description": "Marks Milk Based Diabetic Diet is a specially formulated food product for diabetic individuals. Rich in protein and nutrients, it provides a healthy alternative to regular milk and helps maintain balanced blood sugar levels.",
-    "image": "https://i.ibb.co/5RCKYDP/3.webp"
+    "image": [
+      "https://i.ibb.co/5RCKYDP/3.webp",
+      "https://i.ibb.co/5RCKYDP/3.webp"
+    ]
   },
   {
     "id": 110,
@@ -1307,7 +1628,10 @@
     "offer": false,
     "rating": "4.4",
     "description": "Ace Power Tablets are designed to support energy levels and improve overall stamina. With a high dosage of 1000mg per tablet, it helps to reduce fatigue and promote mental alertness for those with an active lifestyle.",
-    "image": "https://i.ibb.co/K9Rwm4H/4.webp"
+    "image": [
+      "https://i.ibb.co/K9Rwm4H/4.webp",
+      "https://i.ibb.co/K9Rwm4H/4.webp"
+    ]
   },
   {
     "id": 111,
@@ -1319,7 +1643,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "Ace Power Tablets provide a natural boost of energy and focus. These tablets are perfect for individuals looking to increase their endurance and mental clarity. With consistent use, they help in maintaining a high energy level throughout the day.",
-    "image": "https://i.ibb.co/VWrt6Zp/5.webp"
+    "image": [
+      "https://i.ibb.co/VWrt6Zp/5.webp",
+      "https://i.ibb.co/VWrt6Zp/5.webp"
+    ]
   },
   {
     "id": 112,
@@ -1331,7 +1658,10 @@
     "offer": true,
     "rating": "4.3",
     "description": "Napa Syrup is a commonly used remedy for fever and pain relief. With its effective formulation, it is designed to provide quick relief from body aches and high temperature. Ideal for both children and adults, it is gentle yet potent.",
-    "image": "https://i.ibb.co/XZk3NrP/6.webp"
+    "image": [
+      "https://i.ibb.co/XZk3NrP/6.webp",
+      "https://i.ibb.co/XZk3NrP/6.webp"
+    ]
   },
   {
     "id": 113,
@@ -1343,7 +1673,10 @@
     "offer": true,
     "rating": "4.2",
     "description": "Napa Pediatric Drops provide gentle and safe relief for children suffering from fever and discomfort. It is formulated specifically for pediatric use, helping to lower temperature and relieve mild pain without harsh side effects.",
-    "image": "https://i.ibb.co/jbKLpnd/7.webp"
+    "image": [
+      "https://i.ibb.co/jbKLpnd/7.webp",
+      "https://i.ibb.co/jbKLpnd/7.webp"
+    ]
   },
   {
     "id": 114,
@@ -1355,7 +1688,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Napa Suppositories are designed for effective relief from fever and pain. With a 500mg dosage, these suppositories provide long-lasting comfort for both children and adults. The product is easy to use and is an alternative for those who have difficulty taking oral medications.",
-    "image": "https://i.ibb.co/JrXwLdQ/8.webp"
+    "image": [
+      "https://i.ibb.co/JrXwLdQ/8.webp",
+      "https://i.ibb.co/JrXwLdQ/8.webp"
+    ]
   },
   {
     "id": 115,
@@ -1367,7 +1703,10 @@
     "offer": true,
     "rating": "4.7",
     "description": "Harpoon Liquid Toilet Cleaner is a powerful formula that eliminates odors and stains, leaving your bathroom smelling fresh. It is safe for all types of toilets and helps prevent limescale buildup with regular use.",
-    "image": "https://i.ibb.co/2NGHhFy/4.webp"
+    "image": [
+      "https://i.ibb.co/2NGHhFy/4.webp",
+      "https://i.ibb.co/2NGHhFy/4.webp"
+    ]
   },
   {
     "id": 116,
@@ -1379,7 +1718,10 @@
     "offer": false,
     "rating": "4.8",
     "description": "Haisenpet Clumping Cat Litter Apple is designed to trap moisture and control odors. Its clumping formula makes cleaning easier, and the apple fragrance ensures a fresh environment for both cats and their owners.",
-    "image": "https://i.ibb.co/x78wCyS/2.webp"
+    "image": [
+      "https://i.ibb.co/x78wCyS/2.webp",
+      "https://i.ibb.co/x78wCyS/2.webp"
+    ]
   },
   {
     "id": 117,
@@ -1391,7 +1733,10 @@
     "offer": true,
     "rating": "4.6",
     "description": "Coziecat Lavender Clumping Cat Litter offers exceptional odor control with the soothing fragrance of lavender. The fast-clumping action makes it easy to scoop and keep your cat’s litter box clean.",
-    "image": "https://i.ibb.co/1sRbNb7/3.webp"
+    "image": [
+      "https://i.ibb.co/1sRbNb7/3.webp",
+      "https://i.ibb.co/1sRbNb7/3.webp"
+    ]
   },
   {
     "id": 118,
@@ -1403,7 +1748,10 @@
     "offer": false,
     "rating": "4.7",
     "description": "Haisenpet Clumping Cat Litter Baby Powder offers a fresh, baby powder scent while controlling odors and absorbing moisture. Ideal for maintaining a clean and fresh environment in your cat’s litter box.",
-    "image": "https://i.ibb.co/QmrsPBC/4.webp"
+    "image": [
+      "https://i.ibb.co/QmrsPBC/4.webp",
+      "https://i.ibb.co/QmrsPBC/4.webp"
+    ]
   },
   {
     "id": 119,
@@ -1415,7 +1763,10 @@
     "offer": true,
     "rating": "4.5",
     "description": "Haisenpet Clumping Cat Litter Coffee helps neutralize odors with its unique coffee fragrance. The clumping formula ensures easy scooping, and it is effective for both long-term and short-term use.",
-    "image": "https://i.ibb.co/D1SD161/5.webp"
+    "image": [
+      "https://i.ibb.co/D1SD161/5.webp",
+      "https://i.ibb.co/D1SD161/5.webp"
+    ]
   },
   {
     "id": 120,
@@ -1427,6 +1778,9 @@
     "offer": true,
     "rating": "4.9",
     "description": "Haisenpet Clumping Cat Litter Lavender offers superior clumping and odor control, paired with a pleasant lavender scent. It’s highly absorbent and keeps your cat’s litter box fresh for longer.",
-    "image": "https://i.ibb.co/XXvc1CM/6.webp"
+    "image": [
+      "https://i.ibb.co/XXvc1CM/6.webp",
+      "https://i.ibb.co/XXvc1CM/6.webp"
+    ]
   }
 ]
