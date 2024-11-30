@@ -2,6 +2,22 @@
 import validator from "validator";
 import userModel from "../models/userModels.js";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+
+const createToken = (user) => {
+  return jwt.sign(
+    {
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      password: user.password,
+      isAdmin: user.isAdmin,
+    },
+    process.env.JWT_SECRET,
+    { expiresIn: "10h" }
+  );
+};
+
 // ==============================userRegister===============================
 // ==============================userRegister===============================
 // ==============================userRegister===============================
@@ -44,7 +60,7 @@ const userRegister = async (req, res) => {
       password: encryptPassword,
       isAdmin: isAdmin || false,
     });
-    console.log("new", newUser);
+    // console.log("new", newUser);
     await newUser.save();
 
     return res.json({ success: true, message: "user register success" });
@@ -55,14 +71,44 @@ const userRegister = async (req, res) => {
 // ==============================userLogin===============================
 // ==============================userLogin===============================
 // ==============================userLogin===============================
-const userLogin = (req, res) => {
+const userLogin = async (req, res) => {
   try {
-    return res.json({ success: true, message: "user Login success" });
+    const { email, password } = await req.body;
+    // console.log(req.body);
+
+    if (!email) {
+      return res.json({ success: false, message: "pleace enter your eamil" });
+    }
+    if (!password) {
+      return res.json({
+        success: false,
+        message: "pleace enter your password",
+      });
+    }
+
+    const user = await userModel.findOne({ email });
+    // console.log("user", user);
+    if (!user) {
+      return res.json({ success: false, message: "user doesn't exist" });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (isMatch) {
+      const token = createToken(user);
+      return res.json({ success: true, token, message: "user Login success" });
+    } else {
+      return res.json({
+        success: false,
+        message: "invalid credintial , pleace try again",
+      });
+    }
   } catch (error) {
     return res.json({ success: false, message: "user Login error" });
   }
 };
 
+// ==============================admin Login===============================
+// ==============================admin Login===============================
 // ==============================admin Login===============================
 const adminLogin = (req, res) => {
   try {
@@ -73,6 +119,8 @@ const adminLogin = (req, res) => {
 };
 
 // ==============================userUpdated===============================
+// ==============================userUpdated===============================
+// ==============================userUpdated===============================
 const userUpdate = (req, res) => {
   try {
     return res.json({ success: true, message: "user updated success" });
@@ -82,17 +130,32 @@ const userUpdate = (req, res) => {
 };
 
 // ==============================User delete===============================
-const userDelete = (req, res) => {
+// ==============================User delete===============================
+// ==============================User delete===============================
+const userDelete = async (req, res) => {
   try {
+    await userModel.findByIdAndDelete(req.body._id);
+
     return res.json({ success: true, message: "user delete success" });
   } catch (error) {
     return res.json({ success: false, message: "user delete error" });
   }
 };
 // ==============================getAllUser===============================
-const userList = (req, res) => {
+// ==============================getAllUser===============================
+// ==============================getAllUser===============================
+const userList = async (req, res) => {
   try {
-    return res.json({ success: true, message: "user List success" });
+    const total = await userModel.countDocuments({});
+
+    const user = await userModel.find({});
+
+    return res.json({
+      success: true,
+      total,
+      user,
+      message: "user List success",
+    });
   } catch (error) {
     return res.json({ success: false, message: "user List error" });
   }
