@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema(
   {
     name: { type: String, require: true },
     email: { type: String, require: true, unique: true },
-    password: { type: Number, require: true },
+    password: { type: String, require: true },
     avater: { type: String },
     isAdmin: { type: Boolean },
     userCart: { type: Object, default: {} },
