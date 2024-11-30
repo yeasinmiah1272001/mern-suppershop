@@ -1,7 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Container from "../Container";
 
 const BottomHeader = () => {
+  const navigate = useNavigate();
   const navigation = [
     { title: "All Category", path: "/" },
     { title: "Home", path: "/" },
@@ -10,10 +11,16 @@ const BottomHeader = () => {
     { title: "Help", path: "/" },
   ];
 
+  const token = localStorage.getItem("adminToken");
+  const handleLogout = () => {
+    localStorage.removeItem("adminToken"); // Remove token
+    navigate("/adminLogin"); // Redirect to login page
+  };
+
   return (
     <div className="bg-[#FE9931] p-0.5 border-t-2 border-orange-500">
       <Container className="flex justify-between items-center mx-auto">
-        <div className="flex space-x-8">
+        <div className="flex space-x-8 cursor-pointer">
           {navigation.map((item, index) => (
             <Link
               key={index}
@@ -24,6 +31,15 @@ const BottomHeader = () => {
               {item.title}
             </Link>
           ))}
+          {token ? (
+            <p onClick={handleLogout} className="text-xl font-semibold">
+              Admin LogOut
+            </p>
+          ) : (
+            <Link to="/admin" className="text-xl font-semibold">
+              Dashboard
+            </Link>
+          )}
         </div>
 
         <div className="flex items-center space-x-6">

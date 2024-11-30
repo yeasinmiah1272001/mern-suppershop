@@ -6,16 +6,15 @@ const RootLayout = () => {
   const location = useLocation();
 
   // Check if the current route is '/dashboard'
-  const hideHeader = location.pathname.startsWith("/dashboard");
+  const hideHeader = location.pathname.startsWith("/admin");
 
   return (
     <div>
-      {/* Only show Header if not on the /dashboard route */}
-      {!hideHeader && <Header />}
+      <Header />
       <ScrollRestoration />
 
       <Outlet />
-      {!hideHeader && <Footer />}
+      <Footer />
     </div>
   );
 };

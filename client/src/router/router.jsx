@@ -10,6 +10,10 @@ import ProductList from "../admin/ProductList";
 import SinglePage from "../Pages/SinglePage";
 import FavouritePage from "../Pages/FavouritePage";
 import CartPage from "../Pages/CartPage";
+import AddUsers from "../admin/AddUsers";
+import UserList from "../admin/UserList";
+import { AdminLogin } from "../admin/AdminLogin";
+// import ProtectedRoute from "../ProtectedRoute ";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +40,10 @@ const router = createBrowserRouter([
         path: "/cartpage",
         element: <CartPage />,
       },
+      {
+        path: "adminLogin",
+        element: <AdminLogin />,
+      },
     ],
   },
   {
@@ -53,6 +61,14 @@ const router = createBrowserRouter([
       {
         path: "list",
         element: <ProductList />,
+      },
+      {
+        path: "adduser",
+        element: <AddUsers />,
+      },
+      {
+        path: "userList",
+        element: <UserList />,
       },
     ],
   },

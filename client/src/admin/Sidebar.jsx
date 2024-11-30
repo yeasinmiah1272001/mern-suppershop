@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="p-4 bg-gray-200 h-screen text-black">
+    <div className="p-4 bg-gray-200 h-screen text-black mt-6">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-center">Admin Sidebar</h1>
       </div>
@@ -39,11 +39,18 @@ const Sidebar = () => {
           <span>Update Item</span>
         </NavLink> */}
         <NavLink
-          to={"/admin/users"}
+          to={"/admin/userList"}
           className="flex items-center p-3 rounded-lg hover:bg-gray-100 transition duration-300"
         >
           <FaUsers className="mr-3 border border-1 border-gray-500 p-1 rounded-full text-3xl" />
           <span>All Users</span>
+        </NavLink>
+        <NavLink
+          to={"/admin/adduser"}
+          className="flex items-center p-3 rounded-lg hover:bg-gray-100 transition duration-300"
+        >
+          <FaUsers className="mr-3 border border-1 border-gray-500 p-1 rounded-full text-3xl" />
+          <span>Add Users</span>
         </NavLink>
       </nav>
     </div>

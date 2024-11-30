@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaHeart, FaShoppingBag, FaUser } from "react-icons/fa";
 import Container from "../Container";
 import { Link } from "react-router-dom";
@@ -6,9 +6,14 @@ import { useSelector } from "react-redux";
 
 const TopHeader = () => {
   const { cart, favourite } = useSelector((state) => state.name);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen((prevState) => !prevState);
+  };
 
   return (
-    <div className=" bg-[#FE9931]">
+    <div className="bg-[#FE9931]">
       <Container className="flex items-center justify-between p-2 shadow-lg">
         {/* Logo Section */}
         <div>
@@ -56,8 +61,30 @@ const TopHeader = () => {
               </span>
             </Link>
           </div>
-          <div>
-            <FaUser size={20} />
+
+          {/* User Icon with Dropdown */}
+          <div className="relative">
+            <FaUser
+              size={20}
+              onClick={toggleDropdown}
+              className="cursor-pointer"
+            />
+            {isDropdownOpen && (
+              <div className="absolute right-0 mt-2 bg-white text-black rounded-lg shadow-lg w-48">
+                <Link
+                  to={"/adminLogin"}
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Admin Login
+                </Link>
+                <Link
+                  to={"/userLogin"}
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  User Login
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </Container>

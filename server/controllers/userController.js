@@ -110,9 +110,35 @@ const userLogin = async (req, res) => {
 // ==============================admin Login===============================
 // ==============================admin Login===============================
 // ==============================admin Login===============================
-const adminLogin = (req, res) => {
+const adminLogin = async (req, res) => {
   try {
-    return res.json({ success: true, message: "admin login success" });
+    const { email, password } = await req.body;
+    if (!email) {
+      return res.json({ success: false, message: "pleace enter your eamil" });
+    }
+    if (!password) {
+      return res.json({
+        success: false,
+        message: "pleace enter your password",
+      });
+    }
+    const user = await userModel.findOne({ email });
+    if (!user) {
+      return res.json({ success: false, message: "user doesn't exist" });
+    }
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      return res.json({
+        success: false,
+        message: "you are not authorized, plece try again",
+      });
+    }
+
+    if (isMatch && user.isAdmin) {
+      const token = createToken(user);
+      return res.json({ success: true, token, message: "admin login success" });
+    }
   } catch (error) {
     return res.json({ success: false, message: "admin login error" });
   }
