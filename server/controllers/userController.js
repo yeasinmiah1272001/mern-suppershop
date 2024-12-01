@@ -44,7 +44,7 @@ const userRegister = async (req, res) => {
       return res.json({ success: false, message: "Enter your valid email" });
     }
     if (existingUser) {
-      return res.json({ success: true, message: "user already exisit" });
+      return res.json({ success: false, message: "user already exisit" });
     }
     if (password.length < 8) {
       return res.json({ success: true, message: "password must 8 chr" });

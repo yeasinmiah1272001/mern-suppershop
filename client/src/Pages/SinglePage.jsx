@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { serverUrl } from "../../Config";
 import { useEffect, useState } from "react";
 import Container from "../Components/Container";
@@ -50,7 +50,14 @@ const SinglePage = () => {
     setNewComment("");
   };
 
-  // redux
+  const navigate = useNavigate();
+
+  const userToken = localStorage.getItem("user-token");
+  useEffect(() => {
+    if (!userToken) {
+      navigate("/userLogin");
+    }
+  }, [userToken]);
 
   return (
     <Container>

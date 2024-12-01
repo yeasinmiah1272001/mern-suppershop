@@ -11,12 +11,19 @@ const BottomHeader = () => {
     { title: "Help", path: "/" },
   ];
 
-  const token = localStorage.getItem("adminToken");
+  const adminToken = localStorage.getItem("adminToken");
   const handleLogout = () => {
     localStorage.removeItem("adminToken"); // Remove token
     navigate("/adminLogin"); // Redirect to login page
   };
 
+  // user token
+  const userToken = localStorage.getItem("user-token");
+  console.log("user", userToken);
+  const userHandleLogout = () => {
+    localStorage.removeItem("user-token");
+    navigate("/userLogin");
+  };
   return (
     <div className="bg-[#FE9931] p-0.5 border-t-2 border-orange-500">
       <Container className="flex justify-between items-center mx-auto">
@@ -31,10 +38,15 @@ const BottomHeader = () => {
               {item.title}
             </Link>
           ))}
-          {token ? (
-            <p onClick={handleLogout} className="text-xl font-semibold">
-              Admin LogOut
-            </p>
+          {adminToken ? (
+            <div className="flex gap-4 items-center">
+              <p onClick={handleLogout} className="text-xl font-semibold">
+                Admin LogOut
+              </p>
+              <Link to="/admin" className="text-xl font-medium">
+                Dashboard
+              </Link>
+            </div>
           ) : (
             <Link to="/admin" className="text-xl font-semibold">
               Dashboard
@@ -56,6 +68,21 @@ const BottomHeader = () => {
             Track Your Order
           </Link>
           <span className="text-black font-semibold">BDT</span>
+          {userToken ? (
+            <span
+              onClick={userHandleLogout}
+              className="text-red-700 font-semibold cursor-pointer"
+            >
+              userLogout
+            </span>
+          ) : (
+            <Link
+              to="/userLogin"
+              className="text-red-700 font-semibold animate-bounce cursor-pointer"
+            >
+              userLogin
+            </Link>
+          )}
         </div>
       </Container>
     </div>

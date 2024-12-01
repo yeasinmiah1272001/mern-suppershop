@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../Components/Container";
 import SectionTitle from "../Components/SectionTitle";
 import { useDispatch, useSelector } from "react-redux";
@@ -19,6 +19,13 @@ const FavouritePage = () => {
   const handleContinueShopping = () => {
     navigate("/productpage"); // Navigate to the home page
   };
+
+  const userToken = localStorage.getItem("user-token");
+  useEffect(() => {
+    if (!userToken) {
+      navigate("/userLogin");
+    }
+  }, [userToken]);
 
   return (
     <Container>

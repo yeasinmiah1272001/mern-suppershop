@@ -4,13 +4,23 @@ import SectionTitle from "../Components/SectionTitle";
 import AddToCartBtn from "../Components/AddToCartBtn";
 import PriceContainer from "../Components/PriceContainer";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { deteleproduct } from "../redux/supperShopSlice";
 import toast from "react-hot-toast";
+import { useEffect } from "react";
 
 const CartPage = () => {
   const { cart } = useSelector((state) => state.name);
   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
+
+  const userToken = localStorage.getItem("user-token");
+  useEffect(() => {
+    if (!userToken) {
+      navigate("/userLogin");
+    }
+  }, [userToken]);
 
   return (
     <Container>

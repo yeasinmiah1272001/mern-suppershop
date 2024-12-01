@@ -13,6 +13,8 @@ import CartPage from "../Pages/CartPage";
 import AddUsers from "../admin/AddUsers";
 import UserList from "../admin/UserList";
 import { AdminLogin } from "../admin/AdminLogin";
+import UserRegister from "../Pages/UserRegister";
+import UserLogin from "../Pages/UserLogin";
 // import ProtectedRoute from "../ProtectedRoute ";
 
 const router = createBrowserRouter([
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: "adminLogin",
         element: <AdminLogin />,
+      },
+      {
+        path: "/userRegister",
+        element: <UserRegister />,
+      },
+      {
+        path: "/userLogin",
+        element: <UserLogin />,
       },
     ],
   },

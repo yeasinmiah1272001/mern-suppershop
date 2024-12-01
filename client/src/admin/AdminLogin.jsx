@@ -50,6 +50,7 @@ export const AdminLogin = () => {
               className="p-3 rounded-md bg-gray-200 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               type="email"
               name="email"
+              defaultValue={"jakir@gmail.com"}
               id="email"
               placeholder="Enter your email"
               required
@@ -64,6 +65,7 @@ export const AdminLogin = () => {
               className="p-3 rounded-md bg-gray-200 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               type="password"
               name="password"
+              defaultValue={"12345678"}
               id="password"
               placeholder="Enter your password"
               required
