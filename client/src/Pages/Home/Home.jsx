@@ -27,6 +27,7 @@ const Home = () => {
   return (
     <div className="">
       <Banner />
+
       <ServicesTag />
       <WeekendDay />
       <PopularCategories />
@@ -48,6 +49,7 @@ const Home = () => {
       <Pharmacy />
       <PetCare />
       <SupperShopApp />
+
       {/* <NewsletterSection /> */}
     </div>
   );

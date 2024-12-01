@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import Container from "./Container";
 import SectionTitle from "./SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Import Autoplay module
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import moment from "moment";
 import ProductCard from "./ProductCard";
 import { serverUrl } from "../../Config";
@@ -20,7 +23,6 @@ const WeekendDay = () => {
         },
       });
       const data = response.data;
-      // console.log("data", data.product);
       if (data.success) {
         setProducts(data.product);
       } else {
@@ -45,25 +47,20 @@ const WeekendDay = () => {
   const [remainingTime, setRemainingTime] = useState(null);
 
   useEffect(() => {
-    // Set the end date (1 year from now)
     const endDate = moment().add(2, "years");
 
-    // Function to calculate remaining time
     const calculateRemainingTime = () => {
       const now = moment();
       const duration = moment.duration(endDate.diff(now));
       setRemainingTime(duration);
     };
 
-    // Calculate the remaining time initially
     calculateRemainingTime();
 
-    // Update the time every second
     const interval = setInterval(() => {
       calculateRemainingTime();
     }, 1000);
 
-    // Cleanup the interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
@@ -91,8 +88,12 @@ const WeekendDay = () => {
       </div>
 
       <Swiper
-        spaceBetween={10}
         slidesPerView={2}
+        autoplay={{
+          delay: 3000, // Delay between slides in milliseconds
+          disableOnInteraction: false, // Continue autoplay after user interaction
+        }}
+        modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
         breakpoints={{
           640: {
             slidesPerView: 3,

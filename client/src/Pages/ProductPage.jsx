@@ -9,11 +9,13 @@ const ProductPage = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCategory, setSelectedCategory] = useState(""); // State for selected category
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedPrice, setSelectedPrice] = useState("");
+  const [selectedRating, setSelectedRating] = useState("");
+  const [selectedOffer, setSelectedOffer] = useState(""); // New state for offer filter
   const itemsPerPage = 12;
-  const pagesPerGroup = 6;
 
-  // Fetch products and filter based on category
+  // Fetch products from the API
   const handleGetProduct = async () => {
     try {
       const response = await axios.get(`${serverUrl}/api/products/list`, {
@@ -21,10 +23,11 @@ const ProductPage = () => {
           "Content-Type": "application/json",
         },
       });
+      console.log(response.data); // Log the response to check the structure
       const data = response.data;
       if (data.success) {
         setProducts(data.product);
-        setFilteredProducts(data.product); // Set initial filtered products to all products
+        setFilteredProducts(data.product); // Set initial filtered products
       } else {
         alert.error(data.message);
       }
@@ -33,125 +36,181 @@ const ProductPage = () => {
     }
   };
 
-  // Filter products based on selected category
-  const handleCategoryChange = (event) => {
-    const category = event.target.value;
-    setSelectedCategory(category);
+  // Filter products based on selected filters
+  const filterProducts = () => {
+    let filtered = products;
 
-    if (category === "") {
-      setFilteredProducts(products); // If "All Categories" is selected, show all products
-    } else {
-      const filtered = products.filter((product) =>
-        product.category.toLowerCase().includes(category.toLowerCase())
+    // Category Filter
+    if (selectedCategory) {
+      filtered = filtered.filter((product) =>
+        product.category.toLowerCase().includes(selectedCategory.toLowerCase())
       );
-      setFilteredProducts(filtered);
     }
-    setCurrentPage(1); // Reset to first page after category change
+
+    // Price Range Filter
+    if (selectedPrice) {
+      const [minPrice, maxPrice] = selectedPrice.split("-").map(Number);
+      filtered = filtered.filter(
+        (product) => product.price >= minPrice && product.price <= maxPrice
+      );
+    }
+
+    // Rating Filter
+    if (selectedRating) {
+      filtered = filtered.filter((product) => product.rating >= selectedRating);
+    }
+
+    // Offer Filter (corrected)
+    if (selectedOffer !== "") {
+      const isOffer = selectedOffer === "true"; // Convert to boolean
+      filtered = filtered.filter((product) => product.offer === isOffer);
+    }
+
+    setFilteredProducts(filtered);
   };
 
+  // Trigger filter whenever filter values change
   useEffect(() => {
+    filterProducts();
     handleGetProduct();
-  }, []);
+  }, [selectedCategory, selectedPrice, selectedRating, selectedOffer]);
 
+  // Get products for the current page
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentItems = filteredProducts.slice(startIndex, endIndex);
+  const currentItems = filteredProducts.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
-  // Total pages
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // Calculate total number of pages
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
-
-  // Pages to display based on the current page group
-  const startPage =
-    Math.floor((currentPage - 1) / pagesPerGroup) * pagesPerGroup + 1;
-  const endPage = Math.min(startPage + pagesPerGroup - 1, totalPages);
-
-  const handlePageClick = (page) => {
-    setCurrentPage(page);
-  };
-
-  const handleNextPage = () => {
-    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-  };
-
-  const handlePrevPage = () => {
-    setCurrentPage((prev) => Math.max(prev - 1, 1));
-  };
 
   return (
     <Container>
-      <SectionTitle title={"Continue your shopping"} />
-      <div className="flex flex-col w-1/3">
-        <label htmlFor="category" className="mb-2">
-          Category
-        </label>
-        <select
-          id="category"
-          className="p-2 border rounded"
-          value={selectedCategory}
-          onChange={handleCategoryChange} // Handle category change
-        >
-          <option value="">All Categories</option>
-          <option value="Pet Care">Pet Care</option>
-          <option value="Pharmacy">Pharmacy</option>
-          <option value="Electronics">Electronics</option>
-          <option value="Exclusive Products">Exclusive Products</option>
-          <option value="Computer Accessories">Computer Accessories</option>
-          <option value="Trending Products">Trending Products</option>
-          <option value="Baby & Mother">Baby & Mother</option>
-          <option value="Skin Care">Skin Care</option>
-          <option value="Food & Grocery">Food & Grocery</option>
-          <option value="Women's Care">Women's Care</option>
-          <option value="Featured products">Featured products</option>
-          <option value="Organic Food">Organic Food</option>
-          <option value="Islamic Items">Islamic Items</option>
-          <option value="Popular Categories">Popular Categories</option>
-          <option value="Weekday Deals">Weekday Deals</option>
-        </select>
-      </div>
-      <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-10">
-        {currentItems.map((item) => (
-          <ProductCard key={item.id} item={item} />
-        ))}
-      </div>
-      <div className="flex justify-center mt-4">
-        <button
-          className={`px-4 py-2 mx-1 rounded ${
-            currentPage === 1
-              ? "bg-gray-300 cursor-not-allowed"
-              : "bg-blue-500 text-white hover:bg-blue-600"
-          }`}
-          onClick={handlePrevPage}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
+      <SectionTitle title={"Shop By Category"} />
 
-        {/* Display Pagination Buttons (6 at a time) */}
-        {[...Array(endPage - startPage + 1)].map((_, index) => (
-          <button
-            key={startPage + index}
-            className={`px-4 py-2 mx-1 rounded ${
-              currentPage === startPage + index
-                ? "bg-blue-500 text-white"
-                : "bg-gray-200 hover:bg-gray-300"
-            }`}
-            onClick={() => handlePageClick(startPage + index)}
-          >
-            {startPage + index}
-          </button>
-        ))}
+      <div className="flex gap-8">
+        {/* Left Side: Filter Options */}
+        <div className="w-1/4 p-4 bg-gray-100 rounded shadow">
+          <div className="mb-6">
+            <label htmlFor="category" className="block mb-2 font-medium">
+              Category
+            </label>
+            <select
+              id="category"
+              className="w-full p-2 border rounded"
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+            >
+              <option value="">All Categories</option>
+              <option value="Pet Care">Pet Care</option>
+              <option value="Pharmacy">Pharmacy</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Exclusive Products">Exclusive Products</option>
+            </select>
+          </div>
 
-        <button
-          className={`px-4 py-2 mx-1 rounded ${
-            currentPage === totalPages
-              ? "bg-gray-300 cursor-not-allowed"
-              : "bg-blue-500 text-white hover:bg-blue-600"
-          }`}
-          onClick={handleNextPage}
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
+          <div className="mb-6">
+            <label htmlFor="price" className="block mb-2 font-medium">
+              Price Range
+            </label>
+            <select
+              id="price"
+              className="w-full p-2 border rounded"
+              value={selectedPrice}
+              onChange={(e) => setSelectedPrice(e.target.value)}
+            >
+              <option value="">All Prices</option>
+              <option value="0-50">Under $50</option>
+              <option value="50-100">$50 - $100</option>
+              <option value="100-200">$100 - $200</option>
+            </select>
+          </div>
+
+          <div className="mb-6">
+            <label htmlFor="rating" className="block mb-2 font-medium">
+              Minimum Rating
+            </label>
+            <select
+              id="rating"
+              className="w-full p-2 border rounded"
+              value={selectedRating}
+              onChange={(e) => setSelectedRating(e.target.value)}
+            >
+              <option value="">All Ratings</option>
+              <option value="1">1 Star & Above</option>
+              <option value="2">2 Stars & Above</option>
+              <option value="3">3 Stars & Above</option>
+              <option value="4">4 Stars & Above</option>
+            </select>
+          </div>
+
+          {/* Offer Filter */}
+          <div className="mb-6">
+            <label htmlFor="offer" className="block mb-2 font-medium">
+              Offer
+            </label>
+            <select
+              id="offer"
+              className="w-full p-2 border rounded"
+              value={selectedOffer}
+              onChange={(e) => setSelectedOffer(e.target.value)}
+            >
+              <option value="">All Offers</option>
+              <option value="true">On Offer</option>
+              <option value="false">Not On Offer</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Right Side: Product Content */}
+        <div className="w-3/4">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {currentItems.length > 0 ? (
+              currentItems.map((item) => (
+                <ProductCard key={item.id} item={item} />
+              ))
+            ) : (
+              <p>No products found</p>
+            )}
+          </div>
+
+          {/* Pagination Controls */}
+          <div className="flex justify-center mt-8">
+            <button
+              className="px-4 py-2 bg-gray-300 rounded-l"
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              Prev
+            </button>
+            {[...Array(totalPages)].map((_, index) => (
+              <button
+                key={index}
+                className={`px-4 py-2 ${
+                  currentPage === index + 1
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-300"
+                } rounded`}
+                onClick={() => handlePageChange(index + 1)}
+              >
+                {index + 1}
+              </button>
+            ))}
+            <button
+              className="px-4 py-2 bg-gray-300 rounded-r"
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next
+            </button>
+          </div>
+        </div>
       </div>
     </Container>
   );

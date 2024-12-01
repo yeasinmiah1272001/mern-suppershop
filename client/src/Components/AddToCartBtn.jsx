@@ -8,8 +8,10 @@ import { toast } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import { FiMinus } from "react-icons/fi";
 import { FaPlus } from "react-icons/fa";
+import { IoMdCart } from "react-icons/io";
+import { twMerge } from "tailwind-merge";
 
-const AddToCartBtn = ({ item }) => {
+const AddToCartBtn = ({ item, className }) => {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => state.name);
 
@@ -64,9 +66,15 @@ const AddToCartBtn = ({ item }) => {
       ) : (
         <button
           onClick={handleAddToCart}
-          className="h-10 w-28 rounded-md bg-black text-white hover:bg-[#FE9931] duration-300"
+          className={twMerge(
+            "h-10 w-36 rounded-md bg-gray-500 text-center items-center justify-center  text-white hover:bg-[#FE9931] duration-300",
+            className
+          )}
         >
-          Add To Cart
+          <IoMdCart
+            className=" text-center items-center justify-center mx-auto"
+            size={30}
+          />
         </button>
       )}
     </div>

@@ -8,6 +8,7 @@ import "swiper/css/pagination"; // If you want pagination functionality
 import "swiper/css/navigation"; // If you want navigation buttons
 import axios from "axios";
 import { serverUrl } from "../../Config";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const PopularCategories = () => {
   const [products, setProducts] = useState([]);
@@ -49,6 +50,23 @@ const PopularCategories = () => {
         <SectionTitle title={"Popular Categories"} />
       </div>
       <Swiper
+        slidesPerView={2}
+        autoplay={{
+          delay: 3000, // Delay between slides in milliseconds
+          disableOnInteraction: false, // Continue autoplay after user interaction
+        }}
+        modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 5,
+          },
+        }}
         spaceBetween={10}
         slidesPerView={2}
         breakpoints={{
@@ -62,7 +80,7 @@ const PopularCategories = () => {
             slidesPerView: 5,
           },
         }}
-        className="p-4"
+        className="p-10"
         n
       >
         {category.map((item) => (

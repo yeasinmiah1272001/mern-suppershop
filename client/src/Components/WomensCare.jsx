@@ -10,6 +10,7 @@ import "swiper/css/navigation"; // If you want navigation buttons
 import CategoryHeader from "./CategoryHeader";
 import axios from "axios";
 import { serverUrl } from "../../Config";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const WomensCare = () => {
   const [products, setProducts] = useState([]);
@@ -58,6 +59,23 @@ const WomensCare = () => {
         <CategoryHeader title={title} categories={categories} />
       </div>
       <Swiper
+        slidesPerView={2}
+        autoplay={{
+          delay: 3000, // Delay between slides in milliseconds
+          disableOnInteraction: false, // Continue autoplay after user interaction
+        }}
+        modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 5,
+          },
+        }}
         spaceBetween={10}
         slidesPerView={2}
         breakpoints={{

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { toast } from "react-hot-toast";
 import { FaHeart } from "react-icons/fa"; // Importing the favorite icon
+import { IoMdCart } from "react-icons/io";
+import { CiEdit } from "react-icons/ci";
 
 import PriceContainer from "./PriceContainer";
 import { addFavourite, deteleFavourite } from "../redux/supperShopSlice";
@@ -27,39 +29,49 @@ const ProductCard = ({ item }) => {
   };
 
   return (
-    <div className="group hover:border p-2 border-gray-300 cursor-pointer relative rounded-lg shadow-lg overflow-hidden h-[280px] w-52 bg-white hover:shadow-black transition-shadow duration-300 ease-in-out">
+    <div className="w-48 h-56 overflow-hidden border border-gray-600  rounded-lg shadow-lg group relative bg-white">
       <Link to={`/single/${item._id}`}>
         <img
           src={item.image[0]}
-          alt={item.name}
-          className="h-40 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+          alt={item.title}
+          className="w-full h-28 object-cover p-1 relative"
         />
-      </Link>
-
-      {/* Offer Badge */}
-      <p className="absolute top-2 right-2 bg-teal-400 text-white p-1 px-3 rounded-md text-xs font-semibold">
-        {item.offer ? "Sale" : "Sold Out"}
-      </p>
-
-      {/* Favorite Icon at the top-left corner */}
-      <button
-        onClick={handleAddFavourite}
-        className={`absolute top-2 left-2 p-1 rounded-full transition duration-300 ${
-          isFavorited ? "text-red-500" : "text-teal-500"
-        }`}
-      >
-        <FaHeart size={24} />
-      </button>
-
-      {/* Sidebar that appears when hovering the image */}
-
-      <div className="p-4">
-        <PriceContainer item={item} />
-        <p className="text-sm font-medium text-gray-700 truncate">
-          {item.title}
+        <p className="absolute top-2 right-2 bg-teal-400 text-white p-1 px-3 rounded-md text-xs font-semibold">
+          {item.offer ? "Sale" : "Sold Out"}
         </p>
-        <p className="text-sm font-medium text-yellow-500">{item.rating}</p>
-        <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-1 w-full mt-2 animate-pulse"></div>
+      </Link>
+      <div className="absolute inset-x-0 bottom-24 translate-y-full opacity-0 invisible group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 flex justify-center space-x-2 pb-3">
+        <button
+          onClick={handleAddFavourite}
+          className="bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200"
+          aria-label="Add to favorites"
+        >
+          <FaHeart
+            className={`${isFavorited ? "text-red-500" : "text-gray-600"}`}
+            size={18}
+          />
+        </button>
+        <button
+          className="bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200"
+          aria-label="Add to wishlist"
+        >
+          <IoMdCart className="text-gray-600" size={18} />
+        </button>
+        <button
+          className="bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200"
+          aria-label="Compare"
+        >
+          <Link to={`/single/${item._id}`}>
+            <CiEdit className="text-gray-600" size={18} />
+          </Link>
+        </button>
+      </div>
+      <div className="p-3">
+        <h3 className="font-semibold text-sm text-gray-700 mb-1 truncate">
+          {item.title}
+        </h3>
+        <p className="text-gray-600 text-sm mb-1">${item.price}</p>
+        <p className="text-xs text-gray-500 line-clamp-2">{item.description}</p>
       </div>
     </div>
   );
