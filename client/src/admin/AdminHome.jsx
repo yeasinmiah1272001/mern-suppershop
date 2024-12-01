@@ -1,24 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import AdminContent from "./AdminContent";
 
 const Admin = () => {
   return (
     <div className=" overflow-hidden">
-      <div class="flex flex-col items-center justify-center  ">
-        <div class="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-center">
-          <h1 class="text-3xl font-bold text-gray-800 mb-4">
-            Welcome to the Admin Panel
-          </h1>
-          <p class="text-gray-600 mb-6">
-            Manage your website's content, users, settings, and more. Use the
-            tools provided in the menu to get started and take control of your
-            admin tasks efficiently.
-          </p>
-          <button class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">
-            Get Started
-          </button>
-        </div>
-      </div>
+      <AdminContent />
 
       <main className="bg-gray-50 min-h-screen w-full">
         <>
