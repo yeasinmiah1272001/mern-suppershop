@@ -22,9 +22,9 @@ const PriceContainer = ({ item, className }) => {
     ? existingProduct.quantity * existingProduct.price
     : item?.price;
   return (
-    <div className={twMerge("flex gap-2 items-center", className)}>
+    <div className={twMerge("flex gap-2 items-center ", className)}>
       <p className="font-semibold text-gray-500 line-through">{regularPrice}</p>
-      <p className="font-semibold text-gray-900">{discountPrice} $</p>
+      <p className="font-semibold text-gray-900">{discountPrice}$</p>
     </div>
   );
 };

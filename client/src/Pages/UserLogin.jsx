@@ -19,11 +19,11 @@ const UserLogin = () => {
   const [errEmail, setErrorEmail] = useState("");
   const [errorPassword, setErrorPassword] = useState("");
 
-  useEffect(() => {
-    if (token) {
-      navigate("/");
-    }
-  }, [token]);
+  // useEffect(() => {
+  //   if (token) {
+  //     navigate("/");
+  //   }
+  // }, [token]);
 
   // email
   const handleEmail = (e) => {

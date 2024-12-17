@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { deteleproduct } from "../redux/supperShopSlice";
 import toast from "react-hot-toast";
 import { useEffect } from "react";
+import CartSummary from "../Components/CartSummary";
 
 const CartPage = () => {
   const { cart } = useSelector((state) => state.name);
@@ -80,31 +81,7 @@ const CartPage = () => {
         </div>
 
         {/* Right Section: Payment Card */}
-        <div className="bg-white p-6 h-64 rounded-lg shadow-lg">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
-            Payment Summary
-          </h2>
-          <div className="space-y-4">
-            <div className="flex justify-between text-gray-700">
-              <span>Subtotal:</span>
-              <span>$100.00</span>
-            </div>
-            <div className="flex justify-between text-gray-700">
-              <span>Shipping:</span>
-              <span>$5.00</span>
-            </div>
-            <div className="flex justify-between text-gray-800 font-semibold">
-              <span>Total:</span>
-              <span>$105.00</span>
-            </div>
-          </div>
-          <button
-            className="mt-6 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
-            disabled
-          >
-            Proceed to Checkout (Demo)
-          </button>
-        </div>
+        <CartSummary cart={cart} />
       </div>
     </Container>
   );

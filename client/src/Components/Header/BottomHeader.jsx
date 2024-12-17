@@ -38,19 +38,12 @@ const BottomHeader = () => {
               {item.title}
             </Link>
           ))}
-          {adminToken ? (
+          {adminToken && (
             <div className="flex gap-4 items-center">
               <p onClick={handleLogout} className="text-xl font-semibold">
                 Admin LogOut
               </p>
-              <Link to="/admin" className="text-xl font-medium">
-                Dashboard
-              </Link>
             </div>
-          ) : (
-            <Link to="/admin" className="text-xl font-semibold">
-              Dashboard
-            </Link>
           )}
         </div>
 
@@ -80,7 +73,7 @@ const BottomHeader = () => {
               to="/userLogin"
               className="text-red-700 font-semibold animate-bounce cursor-pointer"
             >
-              userLogin
+              PleaceLogin
             </Link>
           )}
         </div>

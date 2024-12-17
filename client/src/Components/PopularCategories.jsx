@@ -52,8 +52,8 @@ const PopularCategories = () => {
       <Swiper
         slidesPerView={2}
         autoplay={{
-          delay: 3000, // Delay between slides in milliseconds
-          disableOnInteraction: false, // Continue autoplay after user interaction
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
         breakpoints={{
